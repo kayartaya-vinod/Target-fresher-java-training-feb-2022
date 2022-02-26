@@ -51,6 +51,59 @@
 -   for constants (final variables)
     -   UPPER_CASE_WITH_UNDERSCORE_DELIMITER
 
+## Operators
+
+-   Arithmetic
+
+unary (work with single operands)
+
+```java
+    +
+    -
+    ++
+    --
+
+```
+
+binary (work with two operands)
+
+```java
+    +
+    -
+    *
+    /
+    %
+    =
+    +=
+    -=
+    *=
+    /=
+    %=
+
+    a += b
+    is same as
+    a = a +b
+```
+
+ternary
+
+```java
+    expr1 ? expr2 : expr3
+```
+
+Relational/ Logical
+
+```java
+    <
+    <=
+    >
+    >=
+    ==
+    !=
+```
+
+bitwise
+
 ## Programming constructs
 
 -   selection
@@ -62,6 +115,29 @@
     -   while
     -   do-while
     -   for
+
+```txt
+
+    for(expr1; expr2; expr3) {
+        statement;
+    }
+
+    expr1
+    expr2
+    statement
+    expr3
+    expr2
+    statement
+    expr3
+    expr2
+    statement
+    expr3
+    expr2
+    statement
+    expr3
+    expr2 --> false; loop stops
+
+```
 
 # Assignments
 

@@ -1,13 +1,11 @@
 package com.targetindia.programs;
 
-import java.util.Scanner;
+import com.targetindia.utils.KeyboardUtil;
 
 public class CheckForEvenOdd {
 
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Enter a number: ");
-        int num = scanner.nextInt();
+        int num = KeyboardUtil.getInt("Enter a number: ");
 
         System.out.println("Value of num is " + num);
 

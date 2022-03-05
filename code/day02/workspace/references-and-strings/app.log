@@ -1,0 +1,104 @@
+[DEBUG] 2022-03-05 12:33:40,162 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:33:40,170 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[DEBUG] 2022-03-05 12:33:40,171 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[DEBUG] 2022-03-05 12:33:40,172 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[DEBUG] 2022-03-05 12:33:40,177 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[ INFO] 2022-03-05 12:34:24,748 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:34:24,750 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:34:24,751 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:35:05,161 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:35:05,168 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[ INFO] 2022-03-05 12:35:05,169 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:35:05,170 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:35:05,173 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:37:09,036 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:37:09,041 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[ INFO] 2022-03-05 12:37:09,041 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:37:09,041 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:37:09,044 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:37:29,902 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:37:29,910 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[ INFO] 2022-03-05 12:37:29,911 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:37:29,911 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:37:29,914 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:37:29,915 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:40:07,401 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:40:07,404 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[ INFO] 2022-03-05 12:40:07,405 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:40:07,405 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:40:07,407 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:40:35,070 main            com.targetindia.programs.ReferencesDemo [  14] Testing references...
+[DEBUG] 2022-03-05 12:40:35,075 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@77ec78b9
+[ INFO] 2022-03-05 12:40:35,075 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:40:35,075 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:40:35,079 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[DEBUG] 2022-03-05 12:40:57,159 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:40:57,162 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:40:57,163 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:40:57,165 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[TRACE] 2022-03-05 12:40:57,166 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:41:35,188 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:41:35,189 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:41:35,189 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:41:35,191 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[TRACE] 2022-03-05 12:41:35,191 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:43:12,235 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:43:12,236 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:43:12,236 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:43:12,238 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[TRACE] 2022-03-05 12:43:12,238 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:43:25,153 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:43:25,159 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:43:25,160 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:43:25,167 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[TRACE] 2022-03-05 12:43:25,167 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:43:33,091 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:43:33,092 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:43:33,093 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:43:33,094 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[TRACE] 2022-03-05 12:43:33,094 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:45:16,823 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:45:16,824 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:45:16,824 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:45:16,826 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[ WARN] 2022-03-05 12:45:16,826 main            com.targetindia.programs.ReferencesDemo [  28] this is a warning
+[ERROR] 2022-03-05 12:45:16,827 main            com.targetindia.programs.ReferencesDemo [  29] this is an error
+[TRACE] 2022-03-05 12:45:16,827 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:45:32,576 main            com.targetindia.programs.ReferencesDemo [  18] value im nums is 100 and emp is com.targetindia.model.Employee@12f41634
+[ INFO] 2022-03-05 12:45:32,578 main            com.targetindia.programs.ReferencesDemo [  24] id = 1122
+[ INFO] 2022-03-05 12:45:32,578 main            com.targetindia.programs.ReferencesDemo [  25] name = Shyam Sundar KC
+[ INFO] 2022-03-05 12:45:32,580 main            com.targetindia.programs.ReferencesDemo [  26] salary = 78000.0
+[ WARN] 2022-03-05 12:45:32,580 main            com.targetindia.programs.ReferencesDemo [  28] this is a warning
+[ERROR] 2022-03-05 12:45:32,580 main            com.targetindia.programs.ReferencesDemo [  29] this is an error
+[TRACE] 2022-03-05 12:45:32,580 main            com.targetindia.model.Employee [  17] printInfo() is not ready yet
+[DEBUG] 2022-03-05 12:59:55,063 main            com.targetindia.programs [  25] b1.id is 1234
+[DEBUG] 2022-03-05 12:59:55,066 main            com.targetindia.programs [  26] b1.title is Let us C
+[DEBUG] 2022-03-05 12:59:55,066 main            com.targetindia.programs [  27] b1.author is Yashwant Kanitkar
+[DEBUG] 2022-03-05 13:00:10,079 main            com.targetindia.programs [  25] b1.id is -900
+[DEBUG] 2022-03-05 13:00:10,081 main            com.targetindia.programs [  26] b1.title is Let us C
+[DEBUG] 2022-03-05 13:00:10,081 main            com.targetindia.programs [  27] b1.author is Yashwant Kanitkar
+[DEBUG] 2022-03-05 13:07:28,891 main            com.targetindia.programs [  25] b1.id is 9876
+[DEBUG] 2022-03-05 13:07:28,894 main            com.targetindia.programs [  26] b1.title is Let us C
+[DEBUG] 2022-03-05 13:07:28,894 main            com.targetindia.programs [  27] b1.author is Yashwant Kanitkar
+[DEBUG] 2022-03-05 14:22:34,207 main            com.targetindia.programs.LombokDemo [  18] Product p = Product(id=123, name=Logitech Mouse, description=Sleek optic mouse from Logitech, unitPrice=12.0, unitsInStock=0)
+[DEBUG] 2022-03-05 14:23:21,145 main            com.targetindia.programs.LombokDemo [  19] Product p = Product(id=123, name=Logitech Mouse, description=Sleek optic mouse from Logitech, unitPrice=12.0, unitsInStock=0)
+[DEBUG] 2022-03-05 14:23:21,147 main            com.targetindia.programs.LombokDemo [  26] Book b1 = com.targetindia.model.Book@7e0e6aa2
+[DEBUG] 2022-03-05 14:26:16,588 main            com.targetindia.programs.LombokDemo [  19] Product p = Product(id=123, name=Logitech Mouse, description=Sleek optic mouse from Logitech, unitPrice=12.0, unitsInStock=0)
+[DEBUG] 2022-03-05 14:26:16,604 main            com.targetindia.programs.LombokDemo [  26] Book b1 = Book{id=123, title='Java Unleashed', author='Unknown'}
+[DEBUG] 2022-03-05 14:26:24,305 main            com.targetindia.programs.LombokDemo [  19] Product p = Product(id=123, name=Logitech Mouse, description=Sleek optic mouse from Logitech, unitPrice=12.0, unitsInStock=0)
+[DEBUG] 2022-03-05 14:26:24,339 main            com.targetindia.programs.LombokDemo [  26] Book b1 = Book{id=123, title='Java Unleashed', author='Unknown'}
+[DEBUG] 2022-03-05 14:54:09,410 main            com.targetindia.programs.StringDemo [  21] name == name1 is false
+[DEBUG] 2022-03-05 14:55:04,391 main            com.targetindia.programs.StringDemo [  21] name == name1 is false
+[DEBUG] 2022-03-05 14:55:04,394 main            com.targetindia.programs.StringDemo [  22] name.equals(name1) is true
+[DEBUG] 2022-03-05 15:00:58,533 main            com.targetindia.programs.StringDemo [  21] name == name1 is false
+[DEBUG] 2022-03-05 15:00:58,534 main            com.targetindia.programs.StringDemo [  22] name.equals(name1) is true
+[DEBUG] 2022-03-05 15:00:58,534 main            com.targetindia.programs.StringDemo [  33] str1==str2 is true and str1.equals(str2) is true
+[DEBUG] 2022-03-05 15:03:05,599 main            com.targetindia.programs.StringDemo [  21] name == name1 is false
+[DEBUG] 2022-03-05 15:03:05,600 main            com.targetindia.programs.StringDemo [  22] name.equals(name1) is true
+[DEBUG] 2022-03-05 15:03:05,600 main            com.targetindia.programs.StringDemo [  33] str1==str2 is true and str1.equals(str2) is true
+[DEBUG] 2022-03-05 15:03:05,600 main            com.targetindia.programs.StringDemo [  36] str1==str2 is false and str1.equals(str2) is false
+[DEBUG] 2022-03-05 15:03:40,155 main            com.targetindia.programs.StringDemo [  21] name == name1 is false
+[DEBUG] 2022-03-05 15:03:40,156 main            com.targetindia.programs.StringDemo [  22] name.equals(name1) is true
+[DEBUG] 2022-03-05 15:03:40,156 main            com.targetindia.programs.StringDemo [  33] str1==str2 is true and str1.equals(str2) is true
+[DEBUG] 2022-03-05 15:03:40,157 main            com.targetindia.programs.StringDemo [  36] str1==str2 is false and str1.equals(str2) is false
+[DEBUG] 2022-03-05 15:03:40,157 main            com.targetindia.programs.StringDemo [  38] str1==str2 is true and str1.equals(str2) is true

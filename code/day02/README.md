@@ -11,36 +11,6 @@
 
 ### Assignment 1
 
-Implement the Java function listed below:
-
-```java
-public static void printCalendar(int month, int year) {
-	/// do stuff here
-}
-```
-
-The function should accept `month` and `year` and print the calendar for the same. If inputs are invalid, appropriate error message/s should be printed.
-
-Sample output for the inputs (8, 2018):
-
-```
-Su Mo Tu We Th Fr Sa
-          1  2  3  4
- 5  6  7  8  9 10 11
-12 13 14 15 16 17 18
-19 20 21 22 23 24 25
-26 27 28 29 30 31
-```
-
-PS:
-
--   Do not use any builtin Java classes like `Date` or `Calendar`
--   Divide the function into small reusable functions, if possible.
-
----
-
-### Assignment 2
-
 Write a function called "sumOfEvensAndOdds", that takes an array of integers as input and returns another array of integers of length 2. The first element in the returned array is the sum of all even numbers in the input array, and the second element in the returned array is the sum of all odd numbers in the input array.
 
 ```java
@@ -78,7 +48,7 @@ Call the function in main, multiple times by supplying multiple values and verif
 
 ---
 
-### Assignment 3
+### Assignment 2
 
 Write a function called "reverseByWords", that takes a sentence (string) as an input, and returns another string. The return value must be a sentence in which the words in the original sentence appear in reverse order.
 
@@ -100,7 +70,7 @@ Call the function in main, multiple times by supplying multiple values and verif
 
 ---
 
-### Assignment 4
+### Assignment 3
 
 Write a function called "inWords" that takes a number between 1 and 99,99,99,999 and returns a String representing the input number in words.
 

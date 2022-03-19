@@ -8,13 +8,18 @@ import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.ToString;
 
+import java.io.Serializable;
+
 @ToString
 @NoArgsConstructor
 @Getter
-public class Employee {
+public class Employee implements Serializable {
     private int id;
     private String name;
     private double salary;
+
+    // the serializer will ignore this member
+    private transient Address address = new Address();
 
     public Employee(int id, String name, double salary) throws InvalidEmployeeIdException, InvalidNameException, InvalidSalaryException {
         setId(id);
@@ -44,4 +49,7 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void setAddress(Address address) {
+        this.address = address;
+    }
 }

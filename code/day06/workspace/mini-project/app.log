@@ -1,0 +1,2 @@
+[DEBUG] 2022-04-02 16:03:24,368 main            com.targetindia.repository.JdbcEmployeeRepository [  22] Trying to insert Employee(id=0, firstname=Kishore, lastname=Kumar, email=kishorekumar@xmpl.com, phone=9878965234, salary=75000.0)
+[DEBUG] 2022-04-02 16:05:29,693 main            com.targetindia.repository.JdbcEmployeeRepository [  22] Trying to insert Employee(id=0, firstname=John, lastname=Keller, email=johnkeller@xmpl.com, phone=9876599887, salary=15000.0)

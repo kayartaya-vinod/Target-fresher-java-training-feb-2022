@@ -7,7 +7,11 @@ import com.targetindia.utils.KeyboardUtil;
 
 public class EmployeeUserInterface {
 
-    EmployeeManager manager = new EmployeeManager();
+    EmployeeManager manager ;
+
+    public EmployeeUserInterface() throws ServiceException {
+        manager = new EmployeeManager();
+    }
 
     public void acceptAndAddEmployeeDetails() {
         String firstname = KeyboardUtil.getString("Enter firstname: ");

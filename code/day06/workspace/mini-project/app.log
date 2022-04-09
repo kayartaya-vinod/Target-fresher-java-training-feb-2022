@@ -1,2 +1,414 @@
 [DEBUG] 2022-04-02 16:03:24,368 main            com.targetindia.repository.JdbcEmployeeRepository [  22] Trying to insert Employee(id=0, firstname=Kishore, lastname=Kumar, email=kishorekumar@xmpl.com, phone=9878965234, salary=75000.0)
 [DEBUG] 2022-04-02 16:05:29,693 main            com.targetindia.repository.JdbcEmployeeRepository [  22] Trying to insert Employee(id=0, firstname=John, lastname=Keller, email=johnkeller@xmpl.com, phone=9876599887, salary=15000.0)
+[DEBUG] 2022-04-09 10:22:03,470 main            com.targetindia.repository.JdbcEmployeeRepository [  22] Trying to insert Employee(id=0, firstname=Pravin, lastname=Kumar, email=pravinkumar@xmpl.com, phone=9089786756, salary=45000.0)
+[ INFO] 2022-04-09 15:48:49,919 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:48:49,969 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:48:50,194 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:48:50,366 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:48:50,375 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:48:50,375 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:48:50,376 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:48:50,378 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:48:50,687 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:48:51,232 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7c3e4b1a] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:48:51,299 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:50:31,225 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:50:31,282 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:50:31,638 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:50:31,882 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:50:31,891 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:50:31,892 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:50:31,892 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:50:31,894 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:50:32,283 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:50:32,835 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:50:32,892 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:51:10,903 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:51:10,953 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:51:11,200 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:51:11,430 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:51:11,444 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:51:11,444 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:51:11,445 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:51:11,448 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:51:11,828 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:51:12,336 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:51:12,445 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:51:12,685 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:51:12,693 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:51:12,694 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:51:12,694 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:51:12,694 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:51:12,694 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:51:12,725 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:51:12,749 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:51:12,776 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:52:09,806 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:52:09,866 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:52:10,076 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:52:10,296 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:52:10,314 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:52:10,316 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:52:10,316 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:52:10,322 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:52:10,697 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:52:11,244 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:52:11,307 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:52:11,505 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:52:11,512 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:52:11,513 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:52:11,513 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:52:11,513 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:52:11,513 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:52:11,549 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:52:11,573 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:52:11,607 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:52:11,618 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:52:11,624 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:52:11,625 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:52:11,625 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:52:11,625 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:52:11,625 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:52:11,662 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:52:11,686 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e29f4f6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:52:11,706 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:53:30,228 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:53:30,285 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:53:30,674 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:53:30,977 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:53:30,987 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:53:30,988 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:53:30,988 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:53:30,990 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:53:31,375 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:53:31,853 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:53:31,904 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:53:32,150 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:53:32,161 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:53:32,162 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:53:32,162 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:53:32,162 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:53:32,162 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:53:32,205 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:53:32,233 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:53:32,259 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:53:32,275 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:53:32,283 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:53:32,284 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:53:32,284 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:53:32,284 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:53:32,284 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:53:32,313 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:53:32,334 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@e29f4f6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:53:32,361 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:54:27,188 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:54:27,256 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:54:27,765 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:54:27,909 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:54:27,919 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:54:27,919 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:54:27,920 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:54:27,922 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:54:28,313 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:54:28,859 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:54:28,902 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:54:29,097 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:54:29,105 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:54:29,105 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:54:29,106 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:54:29,106 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:54:29,106 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:54:29,146 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:54:29,172 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:54:29,205 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:54:29,253 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:54:29,259 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:54:29,260 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:54:29,260 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:54:29,260 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:54:29,260 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:54:29,290 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:54:29,320 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b24087d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:54:29,345 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:54:29,358 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:54:29,366 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:54:29,366 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:54:29,366 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:54:29,366 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:54:29,366 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:54:29,397 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:54:29,416 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ecda95b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:54:29,440 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:54:29,460 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:54:29,468 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:54:29,468 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:54:29,468 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:54:29,468 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:54:29,468 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:54:29,503 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:54:29,537 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@72b0a004] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:54:29,568 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:55:22,947 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:55:23,004 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:55:23,193 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:55:23,318 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:55:23,327 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:55:23,328 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:55:23,328 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:55:23,331 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:55:23,760 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:55:24,460 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:55:24,540 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:55:24,824 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:55:24,839 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:55:24,839 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:55:24,839 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:55:24,840 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:55:24,840 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:55:24,903 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:55:24,947 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:55:24,972 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:55:25,050 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:55:25,064 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:55:25,065 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:55:25,065 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:55:25,065 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:55:25,066 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:55:25,112 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:55:25,139 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b24087d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:55:25,164 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:55:25,190 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:55:25,207 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:55:25,207 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:55:25,208 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:55:25,209 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:55:25,210 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:55:25,268 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:55:25,328 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ecda95b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:55:25,387 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:55:25,394 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:55:25,414 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:55:25,414 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:55:25,415 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:55:25,415 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:55:25,416 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:55:25,537 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:55:25,590 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@715f45c6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:55:25,618 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:56:30,281 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:56:30,336 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:56:30,540 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:56:30,686 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:56:30,704 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:56:30,706 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:56:30,708 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:56:30,715 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:56:31,214 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:56:31,675 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:56:31,726 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:56:31,900 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:56:31,907 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:56:31,907 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:56:31,907 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:56:31,907 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:56:31,908 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:56:31,945 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:56:31,973 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:56:31,998 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:56:32,076 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:56:32,087 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:56:32,088 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:56:32,088 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:56:32,088 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:56:32,088 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:56:32,145 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:56:32,170 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b24087d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:56:32,193 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:56:32,210 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:56:32,218 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:56:32,218 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:56:32,219 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:56:32,219 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:56:32,219 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:56:32,254 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:56:32,281 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ecda95b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:56:32,305 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:56:32,310 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:56:32,317 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:56:32,317 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:56:32,317 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:56:32,318 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:56:32,318 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:56:32,345 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:56:32,364 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@715f45c6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:56:32,384 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:57:20,910 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:57:20,962 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:57:21,165 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:57:21,316 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:57:21,324 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:57:21,325 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:57:21,325 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:57:21,327 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:57:21,760 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:57:22,207 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73ae0257] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:57:22,256 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:57:22,435 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:57:22,444 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:57:22,444 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:57:22,445 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:57:22,445 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:57:22,445 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:57:22,491 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:57:22,528 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:57:22,555 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:57:22,612 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:57:22,620 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:57:22,620 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:57:22,620 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:57:22,620 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:57:22,621 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:57:22,668 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:57:22,701 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b24087d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:57:22,723 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:57:22,740 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:57:22,748 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:57:22,749 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:57:22,749 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:57:22,749 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:57:22,750 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:57:22,781 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:57:22,803 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ecda95b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:57:22,821 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:57:22,824 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:57:22,830 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:57:22,831 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:57:22,831 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:57:22,831 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:57:22,831 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:57:22,866 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:57:22,888 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@715f45c6] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:57:22,907 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:58:22,993 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 15:58:23,060 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 15:58:23,234 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 15:58:23,393 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:58:23,402 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:58:23,403 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:58:23,403 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:58:23,405 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:58:23,849 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:58:24,295 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@77ab22be] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:58:24,346 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:58:24,530 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:58:24,539 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:58:24,539 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:58:24,539 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:58:24,540 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:58:24,540 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:58:24,568 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:58:24,590 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@91da29b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:58:24,621 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:58:24,663 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:58:24,670 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:58:24,670 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:58:24,670 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:58:24,670 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:58:24,671 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:58:24,700 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:58:24,719 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@17207f5b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:58:24,754 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:58:24,775 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:58:24,783 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:58:24,783 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:58:24,783 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:58:24,783 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:58:24,784 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:58:24,814 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:58:24,832 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@235c997d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:58:24,848 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 15:58:24,877 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 15:58:24,882 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 15:58:24,883 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 15:58:24,883 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 15:58:24,883 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 15:58:24,883 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 15:58:24,905 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 15:58:24,919 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7bbcf6f0] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 15:58:24,933 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:08,911 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 16:00:08,959 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 16:00:09,214 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 16:00:09,377 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:09,385 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:09,386 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:09,386 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:09,390 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:09,838 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:10,314 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5762658b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:10,367 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:10,571 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:10,578 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:10,578 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:10,579 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:10,579 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:10,579 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:10,612 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:10,632 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@73fbdf68] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:10,649 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:10,693 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:10,699 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:10,699 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:10,700 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:10,700 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:10,700 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:10,725 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:10,744 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@3b24087d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:10,767 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:10,790 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:10,807 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:10,808 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:10,809 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:10,809 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:10,809 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:10,844 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:10,869 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@7ecda95b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:10,888 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:10,911 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:10,916 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:10,917 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:10,917 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:10,917 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:10,917 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:10,946 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:10,971 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@477021ee] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:10,999 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:11,025 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:11,039 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:11,039 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:11,039 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:11,039 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:11,039 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:11,077 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:11,095 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@498c535d] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:11,112 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:11,122 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ WARN] 2022-04-09 16:00:11,128 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:11,129 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:11,129 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:11,129 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:11,129 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:11,164 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:11,184 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@44aa2e13] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:11,202 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+[ INFO] 2022-04-09 16:00:30,461 main            org.hibernate.jpa.internal.util.LogHelper [  31] HHH000204: Processing PersistenceUnitInfo [name: TARGET_PU]
+[ INFO] 2022-04-09 16:00:30,511 main            org.hibernate.Version [  44] HHH000412: Hibernate ORM core version 5.6.7.Final
+[ INFO] 2022-04-09 16:00:30,729 main            org.hibernate.annotations.common.Version [  56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+[ WARN] 2022-04-09 16:00:30,980 main            org.hibernate.orm.connections.pooling [  72] HHH10001002: Using Hibernate built-in connection pool (not for production use!)
+[ INFO] 2022-04-09 16:00:30,991 main            org.hibernate.orm.connections.pooling [ 115] HHH10001005: using driver [com.mysql.cj.jdbc.Driver] at URL [jdbc:mysql://localhost/target_db]
+[ INFO] 2022-04-09 16:00:30,991 main            org.hibernate.orm.connections.pooling [ 124] HHH10001001: Connection properties: {password=****, user=root}
+[ INFO] 2022-04-09 16:00:30,992 main            org.hibernate.orm.connections.pooling [ 129] HHH10001003: Autocommit mode: false
+[ INFO] 2022-04-09 16:00:30,995 main            org.hibernate.engine.jdbc.connections.internal.DriverManagerConnectionProviderImpl [ 274] HHH000115: Hibernate connection pool size: 20 (min=1)
+[ INFO] 2022-04-09 16:00:31,523 main            org.hibernate.dialect.Dialect [ 175] HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+[ INFO] 2022-04-09 16:00:32,115 main            org.hibernate.orm.connections.access [  48] HHH10001501: Connection obtained from JdbcConnectionAccess [org.hibernate.engine.jdbc.env.internal.JdbcEnvironmentInitiator$ConnectionProviderJdbcConnectionAccess@5762658b] for (non-JTA) DDL execution was not in auto-commit mode; the Connection 'local transaction' will be committed and the Connection will be set into auto-commit mode.
+[ INFO] 2022-04-09 16:00:32,190 main            org.hibernate.engine.transaction.jta.platform.internal.JtaPlatformInitiator [  52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]

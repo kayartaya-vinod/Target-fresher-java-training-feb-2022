@@ -4,10 +4,8 @@ import com.targetindia.entity.Employee;
 import com.targetindia.utils.DbUtil;
 import lombok.extern.slf4j.Slf4j;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+import java.sql.*;
+import java.util.ArrayList;
 import java.util.List;
 
 @Slf4j
@@ -45,7 +43,21 @@ public class JdbcEmployeeRepository implements EmployeeRepository {
 
     @Override
     public Employee findById(int id) throws RepositoryException {
-        return null;
+        String sql = "select * from employees where empno=?";
+        try (
+                Connection conn = DbUtil.createConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql);
+        ) {
+            stmt.setInt(1, id);
+            try(ResultSet rs = stmt.executeQuery()){
+                if(rs.next()){
+                    return getEmployee(rs);
+                }
+                return null;
+            }
+        } catch (Exception ex) {
+            throw new RepositoryException(ex);
+        }
     }
 
     @Override
@@ -60,7 +72,32 @@ public class JdbcEmployeeRepository implements EmployeeRepository {
 
     @Override
     public List<Employee> findAll() throws RepositoryException {
-        return null;
+        String sql = "select * from employees";
+        List<Employee> list = new ArrayList<>();
+        try (
+                Connection conn = DbUtil.createConnection();
+                PreparedStatement stmt = conn.prepareStatement(sql);
+                ResultSet rs = stmt.executeQuery();
+        ) {
+                while(rs.next()){
+                    list.add(getEmployee(rs));
+                }
+        } catch (Exception ex) {
+            throw new RepositoryException(ex);
+        }
+
+        return list;
+    }
+
+    private Employee getEmployee(ResultSet rs) throws SQLException {
+        Employee e = new Employee();
+        e.setId(rs.getInt("empno"));
+        e.setFirstname(rs.getString("firstname"));
+        e.setLastname(rs.getString("lastname"));
+        e.setEmail(rs.getString("email"));
+        e.setPhone(rs.getString("phone"));
+        e.setSalary(rs.getDouble("salary"));
+        return e;
     }
 
     @Override

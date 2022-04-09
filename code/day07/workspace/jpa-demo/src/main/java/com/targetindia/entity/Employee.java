@@ -8,13 +8,16 @@ import javax.persistence.*;
 @Entity
 @Table(name="employees")
 public class Employee {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name="empno")
-    private int id;
+    private Integer id;
+    @Column(name="firstname") // optional; since the name of the column matches the name of the field
     private String firstname;
+    @Column // optional; since the name of the column matches the name of the field
     private String lastname;
     private String email;
     private String phone;
-    private double salary;
+    private Double salary;
 }

@@ -1,0 +1,22 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Employee Management System</title>
+<link type="text/css" rel="stylesheet"
+	href="https://bootswatch.com/5/yeti/bootstrap.min.css">
+</head>
+<body>
+	<div class="alert alert-primary">
+		<div class="container">
+			<h1>Employee Management System</h1>
+		</div>
+	</div>
+
+	<div class="container">
+	

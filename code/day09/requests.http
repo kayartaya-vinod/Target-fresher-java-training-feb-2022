@@ -1,0 +1,68 @@
+http://localhost:8080/app1/hello
+
+### HTTP request in RFC-2616 format
+
+GET /api/contacts
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+
+###
+GET /api/contacts/3f539708-75aa-42d3-8db1-6d1a72fb0e0c
+Host: vin-contact-service.herokuapp.com
+Accept: application/json
+
+###
+GET /api/contacts
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+
+###
+PUT /api/contacts/3f539708-75aa-42d3-8db1-6d1a72fb0e0c
+Host: vin-contact-service.herokuapp.com
+Accept: application/xml
+Content-Type: application/json
+
+{
+  "firstname": "Giustina",
+  "lastname": "Fordy",
+  "gender": "Female",
+  "email": "gfordy6v@whitehouse.gov",
+  "phone": "2029408977",
+  "address": "41, MG Road",
+  "city": "Bangalore",
+  "state": "Karnataka",
+  "country": "India",
+  "pincode": "560077"
+}
+
+###
+POST /api/contacts
+Host: vin-contact-service.herokuapp.com
+Content-Type: application/json
+
+{
+  "firstname": "Vinod",
+  "lastname": "Kumar",
+  "gender": "Male",
+  "email": "vinod@vinod.co",
+  "phone": "9731424784",
+  "address": "ISRO layout",
+  "city": "Bangalore",
+  "state": "Karnataka",
+  "country": "India",
+  "pincode": "560078"
+}
+
+###
+
+GET /ems/api/employees/345
+Host: localhost:9090
+Accept: application/json
+
+###
+
+GET /ems/api/employees/345
+Host: localhost:9090
+Accept: application/xml
+
+###

@@ -21,3 +21,76 @@ Host: localhost:8080
 Accept: application/json
 
 ###
+
+GET /api/employees
+Host: localhost:8080
+Accept: application/xml
+
+###
+
+GET /api/employees/42c21abe-582b-4cdf-96fb-806f937bb287
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /api/employees/42c21abe-582b-4cdf-96fb-806f937bb287
+Host: localhost:8080
+Accept: application/xml
+
+###
+
+GET /api/employees/42c21abe-582b-4cdf-96fb-806f937bb287aa
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /api/employees/42c21abe-582b-4cdf-96fb-806f937bb287aa
+Host: localhost:8080
+Accept: application/xml
+
+###
+
+POST /api/employees
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstname": "Suresh",
+  "lastname": "Kumar",
+  "email": "sureshkumar@xmpl.com",
+  "phone": "9870008877",
+  "salary": 35000.0
+}
+
+###
+
+POST /api/employees
+Host: localhost:8080
+Content-Type: application/xml
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<employee>
+  <firstname>Ramesh</firstname>
+  <lastname>Iyer</lastname>
+  <email>rameshiyer@xmpl.com</email>
+  <phone>9845605432</phone>
+  <salary>27000.0</salary>
+</employee>
+###
+
+POST /api/employees
+Host: localhost:8080
+Content-Type: application/json
+Accept: application/json
+
+{
+    "firstname": "Susheel",
+  "lastname": "Kumar",
+  "email": "sureshkumar@xmpl.com",
+  "phone": "6784561230",
+  "salary": 35000.0
+}

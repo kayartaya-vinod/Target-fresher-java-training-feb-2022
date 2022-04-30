@@ -7,17 +7,17 @@ import lombok.NoArgsConstructor;
 import javax.xml.bind.annotation.XmlAccessType;
 import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
+import java.util.Date;
 
-@XmlRootElement
+@XmlRootElement(name="error-info")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 @NoArgsConstructor
-@AllArgsConstructor
-public class Employee {
-    private String id;
-    private String firstname;
-    private String lastname;
-    private String email;
-    private String phone;
-    private Double salary;
+public class ErrorInfo {
+    private String message;
+    private Date timestamp = new Date();
+
+    public ErrorInfo(String message) {
+        this.message = message;
+    }
 }

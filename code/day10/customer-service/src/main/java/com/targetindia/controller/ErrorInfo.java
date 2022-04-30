@@ -1,6 +1,5 @@
-package com.targetindia.model;
+package com.targetindia.controller;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
@@ -9,7 +8,7 @@ import javax.xml.bind.annotation.XmlAccessorType;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.util.Date;
 
-@XmlRootElement(name = "error-info")
+@XmlRootElement(name="error-info")
 @XmlAccessorType(XmlAccessType.FIELD)
 @Data
 @NoArgsConstructor

@@ -88,9 +88,9 @@ Content-Type: application/json
 Accept: application/json
 
 {
-    "firstname": "Susheel",
+  "firstname": "Susheel",
   "lastname": "Kumar",
-  "email": "sureshkumar@xmpl.com",
-  "phone": "6784561230",
+  "email": "sureshkumar1@xmpl.com",
+  "phone": "6784561231",
   "salary": 35000.0
 }

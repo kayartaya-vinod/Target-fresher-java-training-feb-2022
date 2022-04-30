@@ -1,0 +1,40 @@
+GET /api/customers/123
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers/1234
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers/123
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/customers/1234
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/customers
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers?city=Stockholm
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers?gender=Female
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers?city=Stockholm&gender=female
+Host: localhost:9090
+Accept: application/json
+
+###

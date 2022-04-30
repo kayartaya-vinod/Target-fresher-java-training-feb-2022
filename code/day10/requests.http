@@ -1,0 +1,23 @@
+GET /api/hello
+Host: localhost:8080
+Accept: text/plain
+
+###
+
+GET /api/hello
+Host: localhost:8080
+Accept: text/html
+
+###
+
+GET /api/hello
+Host: localhost:8080
+Accept: application/json
+
+###
+
+GET /api/employees
+Host: localhost:8080
+Accept: application/json
+
+###

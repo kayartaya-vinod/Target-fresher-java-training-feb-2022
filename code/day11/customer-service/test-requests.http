@@ -1,0 +1,73 @@
+GET /api/customers
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/customers/12
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers/33
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/customers/1222
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers/3322
+Host: localhost:9090
+Accept: application/xml
+
+###
+POST /api/customers
+Host: localhost:9090
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstname": "Vinod",
+  "lastname": "Kumar",
+  "gender": "Male",
+  "email": "vinod@vinod.co",
+  "phone": "9731424784",
+  "address": "1st cross, 1st main, ISRO lyt",
+  "city": "Bangalore",
+  "state": "Karnataka",
+  "country": "India"
+}
+
+###
+POST /api/customers
+Host: localhost:9090
+Content-Type: application/xml
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+  <id>33</id>
+  <firstname>Robyn</firstname>
+  <lastname>Ternouth</lastname>
+  <gender>Female</gender>
+  <email>rternouthw@seesaa.net</email>
+  <phone>5708399481</phone>
+  <address>1 Kenwood Avenue</address>
+  <city>Quinuabamba</city>
+  <country>Peru</country>
+</customer>
+
+###
+POST /api/customers
+Host: localhost:9090
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html
+
+firstname=Vinod&lastname=Kumar&gender=Male&email=vinod@knowledgeworksindia.com&phone=9844083934&address=1st cross, 1st main, ISRO lyt&city=Bangalore&state=Karnataka&country=India

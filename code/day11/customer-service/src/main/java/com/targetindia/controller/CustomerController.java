@@ -21,6 +21,8 @@ public class CustomerController {
 
     @GetMapping
     public CustomerList getCustomersHandler(
+            @RequestParam(name = "_page", required = false, defaultValue = "1") int pageNo,
+            @RequestParam(name = "_limit", required = false, defaultValue = "10") int pageSize,
             @RequestParam(name = "city", required = false, defaultValue = "") String city,
             @RequestParam(name = "gender", required = false, defaultValue = "") String gender
     ) {
@@ -37,7 +39,7 @@ public class CustomerController {
             List<Customer> itr = service.getAllCustomersByGender(gender);
             return new CustomerList(itr);
         }
-        List<Customer> itr = service.getAllCustomers();
+        List<Customer> itr = service.getAllCustomers(pageNo, pageSize);
         return new CustomerList(itr);
     }
 
@@ -53,6 +55,13 @@ public class CustomerController {
         return ResponseEntity.ok(customer);
     }
 
+    @PostMapping(produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<Customer> handlePostRequestXmlJsonData(@RequestBody Customer customer){
+        customer = service.addNewCustomer(customer);
+        return ResponseEntity.status(HttpStatus.CREATED).body(customer);
+    }
+
     @PostMapping(produces = MediaType.TEXT_HTML_VALUE, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
     public ResponseEntity<String> handlePostRequestFormData(Customer customer) {
         try {
@@ -63,6 +72,31 @@ public class CustomerController {
         } catch (ServiceException e) {
             String html = "<h3>New customer data could not be saved to db!</h3>\n" +
                     "<p>Error message is " + e.getMessage() + "</p>";
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(html);
+        }
+    }
+
+
+    @PutMapping(value = "/{id}", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<Customer> handlePutRequestXmlJsonData(@PathVariable Integer id, @RequestBody Customer customer){
+        customer.setId(id);
+        customer = service.updateCustomer(customer);
+        return ResponseEntity.status(HttpStatus.CREATED).body(customer);
+    }
+
+    @PutMapping(value = "/{id}",
+            produces = MediaType.TEXT_HTML_VALUE, consumes = MediaType.APPLICATION_FORM_URLENCODED_VALUE)
+    public ResponseEntity<String> handlePutRequestFormData(@PathVariable Integer id, Customer customer){
+        try{
+            customer.setId(id);
+            customer = service.updateCustomer(customer);
+            String html = "<h3>Customer data saved to db successfully!</h3>";
+            return ResponseEntity.ok(html);
+        }
+        catch(Exception ex){
+            String html = "<h3>Customer data could not be saved to db!</h3>\n" +
+                    "<p>Error message is " + ex.getMessage() + "</p>";
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(html);
         }
     }

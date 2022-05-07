@@ -3,6 +3,7 @@ package com.targetindia.service;
 import com.targetindia.entity.Customer;
 import com.targetindia.repository.CustomerRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.PageRequest;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,8 +23,8 @@ public class CustomerService {
         return null;
     }
 
-    public List<Customer> getAllCustomers(){
-        return repo.findAll();
+    public List<Customer> getAllCustomers(int pageNo, int pageSize){
+        return repo.findAll(PageRequest.of(pageNo-1, pageSize)).toList();
     }
 
     public List<Customer> getAllCustomersByCity(String city){
@@ -40,9 +41,21 @@ public class CustomerService {
     public Customer addNewCustomer(Customer customer) throws ServiceException {
         try{
             customer.setId(null);
-            return repo.save(customer);
+            return repo.save(customer); // ID is null; executes an SQL INSERT command
         }
         catch(Exception ex){
+            throw new ServiceException(ex);
+        }
+    }
+
+    public Customer updateCustomer(Customer customer) throws ServiceException {
+        if(customer.getId()==null){
+            throw new ServiceException("ID is missing while it is required");
+        }
+        try{
+            return repo.save(customer); // ID is not null; executes an SQL UPDATE command
+        }
+        catch (Exception ex){
             throw new ServiceException(ex);
         }
     }

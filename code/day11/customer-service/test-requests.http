@@ -8,6 +8,26 @@ Host: localhost:9090
 Accept: application/xml
 
 ###
+GET /api/customers?_page=2
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers?_page=3
+Host: localhost:9090
+Accept: application/xml
+
+###
+GET /api/customers?_limit=5
+Host: localhost:9090
+Accept: application/json
+
+###
+GET /api/customers?_limit=5&_page=4
+Host: localhost:9090
+Accept: application/xml
+
+###
 GET /api/customers/12
 Host: localhost:9090
 Accept: application/json
@@ -37,8 +57,8 @@ Accept: application/json
   "firstname": "Vinod",
   "lastname": "Kumar",
   "gender": "Male",
-  "email": "vinod@vinod.co",
-  "phone": "9731424784",
+  "email": "vinod123@vinod.co",
+  "phone": "9731424000",
   "address": "1st cross, 1st main, ISRO lyt",
   "city": "Bangalore",
   "state": "Karnataka",
@@ -53,12 +73,11 @@ Accept: application/xml
 
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <customer>
-  <id>33</id>
   <firstname>Robyn</firstname>
   <lastname>Ternouth</lastname>
   <gender>Female</gender>
-  <email>rternouthw@seesaa.net</email>
-  <phone>5708399481</phone>
+  <email>rternouthw@exmaple.com</email>
+  <phone>5708399000</phone>
   <address>1 Kenwood Avenue</address>
   <city>Quinuabamba</city>
   <country>Peru</country>
@@ -71,3 +90,49 @@ Content-Type: application/x-www-form-urlencoded
 Accept: text/html
 
 firstname=Vinod&lastname=Kumar&gender=Male&email=vinod@knowledgeworksindia.com&phone=9844083934&address=1st cross, 1st main, ISRO lyt&city=Bangalore&state=Karnataka&country=India
+
+
+###
+PUT /api/customers/3
+Host: localhost:9090
+Content-Type: application/xml
+Accept: application/xml
+
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<customer>
+    <firstname>Armstrong</firstname>
+    <lastname>Neil</lastname>
+    <gender>Male</gender>
+    <email>neil.armstrong@xmpl.com</email>
+    <phone>5628277016</phone>
+    <address>3 Melody Lane</address>
+    <city>Dallas</city>
+    <state>Texas</state>
+    <country>United States</country>
+</customer>
+
+
+###
+PUT /api/customers/12
+Host: localhost:9090
+Content-Type: application/json
+Accept: application/json
+
+{
+  "lastname": "Vaney",
+  "gender": "Female",
+  "email": "gvaneyb@shareasale.com",
+  "phone": "7032604935",
+  "address": "703 Katie Pass",
+  "city": "Nyachera",
+  "state": "Ntungamo, western region",
+  "country": "Uganda"
+}
+
+###
+PUT /api/customers/1004
+Host: localhost:9090
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html
+
+firstname=Vinod&lastname=Kayartaya&gender=Male&email=vinod@knowledgeworksindia.com&phone=9844083934&city=Bangalore&state=Karnataka&country=India

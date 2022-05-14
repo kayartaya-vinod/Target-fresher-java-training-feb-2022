@@ -100,4 +100,92 @@ public class CustomerController {
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(html);
         }
     }
+
+    @PatchMapping(value = "/{id}", produces = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE},
+            consumes = {MediaType.APPLICATION_XML_VALUE, MediaType.APPLICATION_JSON_VALUE})
+    public ResponseEntity<Object> handlePatchRequestXmlJsonData(@PathVariable Integer id, @RequestBody Customer customer){
+        Customer c = service.getOneCustomerById(id);
+        if(c==null){
+            throw new ServiceException("No customer found with id: " + id);
+        }
+        mergeCustomer(c, customer);
+        customer = service.updateCustomer(c);
+        return ResponseEntity.status(HttpStatus.CREATED).body(customer);
+    }
+
+    @PatchMapping(value = "/{id}", produces = {MediaType.TEXT_HTML_VALUE},
+            consumes = {MediaType.APPLICATION_FORM_URLENCODED_VALUE})
+    public ResponseEntity<Object> handlePatchRequestFormData(@PathVariable Integer id, Customer customer){
+        Customer c = service.getOneCustomerById(id);
+        if(c==null){
+            String html = "<p>No customer found with id: " + id+"</p>";
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(html);
+        }
+        try {
+            mergeCustomer(c, customer);
+            customer = service.updateCustomer(c);
+            return ResponseEntity.ok("<p>Updated: "+customer.toString()+"</p>");
+        }
+        catch(Exception ex){
+            String html = "<h3>Customer data could not be saved to db!</h3>\n" +
+                    "<p>Error message is " + ex.getMessage() + "</p>";
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(html);
+        }
+    }
+
+    @DeleteMapping(value="/{id}", produces = {"application/xml", "application/json"})
+    public ResponseEntity<Customer> handleDeleteRequest(
+            @PathVariable Integer id,
+            @RequestHeader(name="Delete-Type", required = false, defaultValue = "soft")String deleteType){
+        Customer customer = service.getOneCustomerById(id);
+
+        if(customer==null){
+            throw new RuntimeException("No customer found with id " + id);
+        }
+
+        if(deleteType.strip().equalsIgnoreCase("hard")){
+            service.hardDelete(id);
+        }
+        else if(deleteType.strip().equalsIgnoreCase("soft")){
+            service.softDelete(customer);
+        }
+        else {
+            throw new RuntimeException("Unknown value for the header 'Delete-Type'");
+        }
+        return ResponseEntity.ok(customer);
+    }
+
+
+    private void mergeCustomer(Customer c1, Customer c2) {
+        // for better practice, use reflection api to perform this!!
+        if(c2.getFirstname()!=null){
+            c1.setFirstname(c2.getFirstname());
+        }
+        if(c2.getLastname()!=null){
+            c1.setLastname(c2.getLastname());
+        }
+        if(c2.getGender()!=null){
+            c1.setGender(c2.getGender());
+        }
+        if(c2.getEmail()!=null){
+            c1.setEmail(c2.getEmail());
+        }
+        if(c2.getPhone()!=null){
+            c1.setPhone(c2.getPhone());
+        }
+        if(c2.getAddress()!=null){
+            c1.setAddress(c2.getAddress());
+        }
+        if(c2.getCity()!=null){
+            c1.setCity(c2.getCity());
+        }
+        if(c2.getState()!=null){
+            c1.setState(c2.getState());
+        }
+        if(c2.getCountry()!=null){
+            c1.setCountry(c2.getCountry());
+        }
+    }
+
+
 }

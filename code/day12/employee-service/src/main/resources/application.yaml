@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: EMPLOYEE-SERVICE
+  datasource:
+    driverClassName: com.mysql.cj.jdbc.Driver
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:target_db}"
+    username: "${MYSQL_USERNAME:root}"
+    password: "${MYSQL_PASSWORD:Welcome#123}"
+  jpa:
+    hibernate:
+      ddlAuto: update
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: "http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/"
+  instance:
+    hostname: EMPLOYEE-SERVICE
+
+
+#spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
+#spring.datasource.url=jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:target_db}
+#spring.datasource.username=${MYSQL_USERNAME:root}
+#spring.datasource.password=${MYSQL_PASSWORD:Welcome#123}
+#spring.jpa.hibernate.ddl-auto=update

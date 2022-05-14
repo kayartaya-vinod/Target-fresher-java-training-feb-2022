@@ -59,6 +59,15 @@ public class CustomerService {
             throw new ServiceException(ex);
         }
     }
+
+    public void hardDelete(Integer id) {
+        this.repo.deleteById(id);
+    }
+
+    public void softDelete(Customer customer){
+        customer.setActive(false);
+        this.repo.save(customer); // UPDATE
+    }
 }
 
 

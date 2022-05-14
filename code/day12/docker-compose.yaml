@@ -1,0 +1,68 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: mysql-container
+    ports:
+      - '3306:3306'
+    environment:
+      - 'MYSQL_ROOT_PASSWORD=Welcome#123'
+    volumes:
+      - 'mysql_data:/var/lib/mysql'
+
+  mongodb: 
+    image: 'mongo:latest'
+    container_name: 'mongodb-container'
+    ports:
+      - "27017:27017"
+    volumes:
+      - "mongodb_volume:/data/db"
+
+  eureka:
+    build: ./eureka-discovery-service
+    container_name: 'eureka-container'
+    ports:
+      - "8761:8761"
+
+  gateway:
+    build: ./api-gateway-service
+    container_name: 'gateway-container'
+    ports:
+      - "8080:8080"
+    depends_on:
+      - eureka
+    environment:
+      - "EUREKA_HOST=eureka"
+
+  department-service:
+    build: ./department-service
+    container_name: 'department-container'
+    depends_on:
+      - mongodb
+      - eureka
+    ports:
+      - "8000:8080"
+    environment:
+      - "MONGO_HOST=mongodb"
+      - "EUREKA_HOST=eureka"
+
+  employee-service:
+    build: ./employee-service
+    container_name: 'employee-container'
+    depends_on:
+      - mysql
+      - eureka
+    ports:
+      - "9000:8080"
+    environment:
+      - "MYSQL_HOST=mysql"
+      - "EUREKA_HOST=eureka"
+
+volumes:
+  mongodb_volume:
+    external: true
+  mysql_data:
+    external: true
+      
+      

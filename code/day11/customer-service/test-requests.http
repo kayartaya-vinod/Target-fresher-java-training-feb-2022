@@ -1,5 +1,5 @@
 GET /api/customers
-Host: localhost:9090
+Host: localhost:7890
 Accept: application/json
 
 ###
@@ -135,4 +135,47 @@ Host: localhost:9090
 Content-Type: application/x-www-form-urlencoded
 Accept: text/html
 
-firstname=Vinod&lastname=Kayartaya&gender=Male&email=vinod@knowledgeworksindia.com&phone=9844083934&city=Bangalore&state=Karnataka&country=India
+firstname=Vinod&lastname=Kayartaya&gender=Male&email=vinod@knowledgeworksindia.com&phone=9844083934&city=Bangalore&state=Karnataka&country=
+
+###
+PATCH /api/customers/12
+Host: localhost:9090
+Content-Type: application/json
+Accept: application/json
+
+{
+  "email": "gvaneyb@example.com"
+}
+
+###
+PATCH /api/customers/12
+Host: localhost:9090
+Content-Type: application/xml
+Accept: application/xml
+
+<customer>
+    <email>gvaneyb@xmpl.com</email>
+    <city>Dallas</city>
+    <state>Texas</state>
+    <country>United States</country>
+</customer>
+
+###
+PATCH /api/customers/12
+Host: localhost:9090
+Content-Type: application/x-www-form-urlencoded
+Accept: text/html
+
+firstname=Geri&email=geri@xmpl.com
+
+
+### hard delete using a customer HTTP header "Delete-Type"
+DELETE /api/customers/14
+Host: localhost:9090
+Delete-Type: hard 
+Accept: application/xml
+
+###
+
+POST /actuator/shutdown
+Host: localhost:9090

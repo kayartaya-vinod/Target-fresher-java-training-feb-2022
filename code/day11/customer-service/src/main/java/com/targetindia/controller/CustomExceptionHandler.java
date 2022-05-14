@@ -11,7 +11,7 @@ import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExcep
 @ControllerAdvice
 public class CustomExceptionHandler extends ResponseEntityExceptionHandler {
 
-    @ExceptionHandler({ServiceException.class})
+    @ExceptionHandler({ServiceException.class, RuntimeException.class})
     public ResponseEntity<Object> handleConflict(RuntimeException ex, WebRequest request){
         ErrorInfo errInfo = new ErrorInfo(ex.getMessage());
         return super.handleExceptionInternal(ex, errInfo, null, HttpStatus.INTERNAL_SERVER_ERROR, request);

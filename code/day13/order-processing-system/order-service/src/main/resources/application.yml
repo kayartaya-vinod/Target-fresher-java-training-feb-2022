@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: ORDER-SERVICE
+  datasource:
+    driverClass: "${MYSQL_DRIVER_CLASSNAME:com.mysql.cj.jdbc.Driver}"
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:northwind}"
+    username: "${MYSQL_USERNAME:root}"
+    password: "${MYSQL_PASSWORD:Welcome#123}"
+  jpa:
+    hibernate:
+      ddlAuto: update
+      naming:
+        physicalStrategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+server:
+  port: 8080
+
+service:
+  url:
+    shipper: "http://${SHIPPER_SERVICE_HOST:localhost}:${SHIPPER_SERVICE_PORT:7001}/api/shippers/"
+    customer: "http://${CUSTOMER_SERVICE_HOST:localhost}:${CUSTOMER_SERVICE_PORT:7002}/api/customers/"
+    employee: "http://${EMPLOYEE_SERVICE_HOST:localhost}:${EMPLOYEE_SERVICE_PORT:7003}/api/employees/"

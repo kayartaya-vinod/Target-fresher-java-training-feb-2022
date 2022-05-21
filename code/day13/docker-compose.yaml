@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+
+  hello-service:
+    build: ./hello-world
+    container_name: hello-world-container
+    ports:
+      - '8080:8080'
+
+  prometheus-service:
+    image: 'bitnami/prometheus:latest'
+    container_name: prometheus-container
+    ports:
+      - '9090:9090'
+    volumes:
+      - './prometheus-conf/prometheus.yml:/opt/bitnami/prometheus/conf/prometheus.yml'
+
+  grafana-service:
+    image: 'grafana/grafana:latest'
+    container_name: grafana-container
+    ports:
+      - '3000:3000'
+    depends_on: 
+      - prometheus-service
+    volumes:
+      - './grafana-conf/datasources:/etc/grafana/provisioning/datasources'
+      - './grafana-conf/dashboards:/etc/grafana/provisioning/dashboards'

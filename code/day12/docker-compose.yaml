@@ -11,7 +11,7 @@ services:
     volumes:
       - 'mysql_data:/var/lib/mysql'
 
-  mongodb: 
+  mongodb:
     image: 'mongo:latest'
     container_name: 'mongodb-container'
     ports:
@@ -47,6 +47,30 @@ services:
       - "MONGO_HOST=mongodb"
       - "EUREKA_HOST=eureka"
 
+  # department-service-1:
+  #   build: ./department-service
+  #   container_name: 'department-container-1'
+  #   depends_on:
+  #     - mongodb
+  #     - eureka
+  #   ports:
+  #     - "8001:8080"
+  #   environment:
+  #     - "MONGO_HOST=mongodb"
+  #     - "EUREKA_HOST=eureka"
+
+  # department-service-2:
+  #   build: ./department-service
+  #   container_name: 'department-container2'
+  #   depends_on:
+  #     - mongodb
+  #     - eureka
+  #   ports:
+  #     - "8002:8080"
+  #   environment:
+  #     - "MONGO_HOST=mongodb"
+  #     - "EUREKA_HOST=eureka"
+
   employee-service:
     build: ./employee-service
     container_name: 'employee-container'
@@ -64,5 +88,3 @@ volumes:
     external: true
   mysql_data:
     external: true
-      
-      

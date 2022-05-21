@@ -1,34 +1,39 @@
 server:
-  port: 8080
+    port: 8080
 
 spring:
-  application:
-    name: GATEWAY-SERVICE
-  cloud:
-    discovery:
-      enabled: true
-    gateway:
-      routes:
-        - id: departmentService # service name in camelCaps
-          predicates:
-            - Path=/api/departments/**
-          uri: lb://DEPARTMENT-SERVICE/
+    application:
+        name: GATEWAY-SERVICE
+    cloud:
+        discovery:
+            enabled: true
+        gateway:
+            globalcors:
+                corsConfigurations:
+                    '[/**]':
+                        allowedOrigins: '*'
+                        allowedMethods: '*'
+                        allowedHeaders: '*'
+            routes:
+                - id: departmentService # service name in camelCaps
+                  predicates:
+                      - Path=/api/departments/**
+                  uri: lb://DEPARTMENT-SERVICE/
 
-        - id: employeeService
-          predicates:
-            - Path=/api/employees/**
-          uri: lb://EMPLOYEE-SERVICE/
+                - id: employeeService
+                  predicates:
+                      - Path=/api/employees/**
+                  uri: lb://EMPLOYEE-SERVICE/
 
 eureka:
-  client:
-    fetchRegistry: true
-    registerWithEureka: true
-    serviceUrl:
-      defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
-  instance:
-    hostname: GATEWAY-SERVICE
-    prefer-ip-address: true
-
+    client:
+        fetchRegistry: true
+        registerWithEureka: true
+        serviceUrl:
+            defaultZone: http://${EUREKA_HOST:localhost}:${EUREKA_PORT:8761}/eureka/
+    instance:
+        hostname: GATEWAY-SERVICE
+        prefer-ip-address: true
 #logging:
 #  level:
 #    org:

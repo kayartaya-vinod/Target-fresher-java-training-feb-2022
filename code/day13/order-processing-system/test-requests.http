@@ -1,0 +1,38 @@
+GET /api/shippers
+Host: localhost:7001
+Accept: application/json
+
+###
+GET /api/shippers/3
+Host: localhost:7001
+Accept: application/json
+
+###
+GET /api/customers
+Host: localhost:7002
+Accept: application/json
+
+###
+GET /api/customers/VINET
+Host: localhost:7002
+Accept: application/json
+
+###
+GET /api/employees
+Host: localhost:7003
+Accept: application/json
+
+###
+GET /api/employees/1
+Host: localhost:7003
+Accept: application/json
+
+###
+
+GET /api/orders/10250
+Host: localhost:8080
+Accept: application/json
+
+###
+
+

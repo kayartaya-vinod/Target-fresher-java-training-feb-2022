@@ -12,6 +12,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+//@CrossOrigin
 @RestController
 @RequestMapping("/api/departments")
 public class DepartmentController {

@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: PRODUCT-SERVICE
+  datasource:
+    driverClass: "${MYSQL_DRIVER_CLASSNAME:com.mysql.cj.jdbc.Driver}"
+    url: "jdbc:mysql://${MYSQL_HOST:localhost}:${MYSQL_PORT:3306}/${MYSQL_DB:northwind}"
+    username: "${MYSQL_USERNAME:root}"
+    password: "${MYSQL_PASSWORD:Welcome#123}"
+  jpa:
+    hibernate:
+      ddlAuto: update
+      naming:
+        physicalStrategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+server:
+  port: 7004

@@ -2,11 +2,9 @@ package com.targetindia.entity;
 
 import lombok.Data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 @Data
 @Entity
@@ -41,4 +39,9 @@ public class Order {
     private String customerId;
     @Column(name = "employee_id")
     private Integer employeeId;
+
+    // one-to-many mapping (one order has many line items)
+    @OneToMany(fetch = FetchType.EAGER)
+    @JoinColumn(name="ORDER_ID")
+    private List<LineItem> lineItems;
 }

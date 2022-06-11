@@ -2,15 +2,13 @@ package com.targetindia.controller;
 
 import com.targetindia.dao.OrderDao;
 import com.targetindia.entity.Order;
-import com.targetindia.model.CustomerDto;
-import com.targetindia.model.EmployeeDto;
-import com.targetindia.model.OrderDto;
-import com.targetindia.model.ShipperDto;
+import com.targetindia.model.*;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -18,13 +16,13 @@ import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestClientException;
 import org.springframework.web.client.RestTemplate;
 import org.springframework.web.reactive.function.client.WebClient;
-import reactor.core.publisher.Mono;
 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Optional;
 
+@CrossOrigin
 @Slf4j
 @RestController
 @RequestMapping("/api/orders")
@@ -38,6 +36,9 @@ public class OrderController {
 
     @Value("${service.url.employee}")
     private String employeeServiceUrl;
+
+    @Value("${service.url.product}")
+    private String productServiceUrl;
 
     @Autowired
     private OrderDao dao;
@@ -57,7 +58,7 @@ public class OrderController {
         }
 
         Order order = result.get();
-
+        log.debug("There are {} line items for this order {}", order.getLineItems().size(), order.getId());
 
         // add data in "order" to an OrderDto object
         OrderDto dto = new OrderDto();
@@ -72,6 +73,29 @@ public class OrderController {
         dto.setShippingRegion(order.getShippingRegion());
         dto.setShippingPostalCode(order.getShippingPostalCode());
         dto.setShippingCountry(order.getShippingCountry());
+
+        order.getLineItems().stream()
+                .forEach(li -> {
+                    LineItemDto liDto = new LineItemDto();
+
+                    // go and get product for this productId and add this to the lineItemDto
+                    try {
+                        WebClient client = WebClient.create(productServiceUrl + li.getProductId());
+                        ProductDto product = client
+                                .get()
+                                .retrieve()
+                                .bodyToMono(ProductDto.class)
+                                .block();
+                        liDto.setProduct(product);
+                    } catch (Exception e) {
+                        log.warn("Exception while getting data from customer service", e);
+                    }
+
+                    liDto.setUnitPrice(li.getUnitPrice());
+                    liDto.setQuantity(li.getQuantity());
+                    liDto.setDiscount(li.getDiscount());
+                    dto.getLineItems().add(liDto);
+                });
 
         try {
             // go and get the shipper data for the shipper id: order.getShippedBy()

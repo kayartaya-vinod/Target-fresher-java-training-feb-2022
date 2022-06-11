@@ -29,6 +29,13 @@ Accept: application/json
 
 ###
 
+GET /api/products/53
+Host: localhost:7004
+Accept: application/json
+
+###
+
+
 GET /api/orders/10250
 Host: localhost:8080
 Accept: application/json

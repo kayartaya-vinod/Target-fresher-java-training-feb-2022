@@ -1,0 +1,70 @@
+version: '3.9'
+
+services:
+  mysql:
+    image: 'mysql:latest'
+    container_name: mysql-container
+    ports:
+      - '3306:3306'
+    environment:
+      - 'MYSQL_ROOT_PASSWORD=Welcome#123'
+    volumes:
+      - 'mysql_data:/var/lib/mysql'
+
+  shipper-service:
+    build: ./shipper-service
+    container_name: 'shipper-container'
+    depends_on:
+      - mongodb
+    ports:
+      - "7001:7001"
+    environment:
+      - "MYSQL_HOST=mysql"
+
+  customer-service:
+    build: ./customer-service
+    container_name: 'customer-container'
+    depends_on:
+      - mysql
+    ports:
+      - "7002:7002"
+    environment:
+      - "MYSQL_HOST=mysql"
+
+  employee-service:
+    build: ./employee-service
+    container_name: 'employee-container'
+    depends_on:
+      - mysql
+    ports:
+      - "7003:7003"
+    environment:
+      - "MYSQL_HOST=mysql"
+
+  product-service:
+    build: ./product-service
+    container_name: 'product-container'
+    depends_on:
+      - mysql
+    ports:
+      - "7004:7004"
+    environment:
+      - "MYSQL_HOST=mysql"
+
+  order-service:
+    build: ./order-service
+    container_name: 'order-container'
+    depends_on:
+      - mysql
+    ports:
+      - "8080:8080"
+    environment:
+      - "MYSQL_HOST=mysql"
+      - "SHIPPER_SERVICE_HOST=shipper-service"
+      - "CUSTOMER_SERVICE_HOST=customer-service"
+      - "EMPLOYEE_SERVICE_HOST=employee-service"
+      - "PRODUCT_SERVICE_HOST=product-service"
+
+volumes:
+  mysql_data:
+    external: true

@@ -2,7 +2,9 @@ package com.targetindia.model;
 
 import lombok.Data;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 @Data
 public class OrderDto {
@@ -21,4 +23,6 @@ public class OrderDto {
     private ShipperDto shippedBy;
     private CustomerDto customer;
     private EmployeeDto employee;
+
+    private List<LineItemDto> lineItems = new ArrayList<>();
 }
